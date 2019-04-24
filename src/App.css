@@ -1,0 +1,126 @@
+
+body {
+    background-color: #AF9C93;
+}
+
+#todos {
+    font-family: Optima, sans-serif;
+    background-color: #ECEDEE; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 40px; 
+    padding: 40px; 
+    width: 70%; 
+    height: 70%;
+    border: 1px; 
+    overflow: scroll; 
+}
+
+@media (max-width: 800px) {
+    #todos {
+        width: 80%;
+    }
+}
+
+#todos #sort{
+    border-radius: 5px;
+    background-color: #91847e;
+    width: 140px;
+    height: 25px;
+    text-align: center;
+    color: white; 
+    border: 1px; 
+    font-size: 11px;
+   margin-bottom: 20px;
+}
+
+#todos #new-todo #newTitle {
+    width: 80%; 
+    font-family: Optima, sans-serif;
+    font-size: 30px; 
+    border: 1px solid #aaa; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: #E1E0DE;
+    text-align: center; 
+}
+
+#todos #new-todo #newTitle:focus {
+    background-color: #FBF9F7; 
+}
+#todos #new-todo #newTitle:hover {
+    background-color: #FBF9F7; 
+}
+
+#todos #new-todo #new-submit {
+    border-radius: 5px;
+    float: right;
+    background-color: #2D6BDA;
+    width: 80px;
+    height: 40px;
+    text-align: right;
+    color: white; 
+    border: 1px; 
+    font-size: 20px; 
+    padding-right: 50px;
+    position: relative;
+    top: 5px; 
+}
+
+
+#todos .todo {
+    font-size: 30px; 
+    font-family: Optima, sans-serif;
+    padding-top: 20px;
+    border-bottom: 1px dotted #aaa; 
+}
+
+
+#todos .todo p {
+    display: inline-block;
+    margin-top: 1px; 
+}
+
+#todos .todo.completed {
+    color: #83756E; 
+}
+
+#todos .todo .check {
+    border-radius: 5px;
+    float: left;
+    margin-top: 10px; 
+    margin-right: 10px;
+    width: 20px; 
+    height: 20px;
+    border: 2px solid #888;  
+}
+
+#todos .todo .check:hover {
+    background-color: hsl(180, 50%, 80%); 
+}
+
+#todos .todo.completed .check {
+        background-color: #043932; 
+}
+
+#todos .todo.completed p {
+    text-decoration: line-through;
+}
+
+#todos .todo .delete {
+    border-radius: 5px;
+    padding-right: 10px;
+    float: right;
+    border: 1px; 
+    font-size: 30px;
+    height: 35px;
+    width: 80px;
+    font-size: 20px;
+    background-color: #A30020; 
+    color: white;
+}
+
+#todos .todo .delete:hover {
+    background-color: #CC0028; 
+}
+
